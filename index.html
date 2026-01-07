@@ -150,7 +150,11 @@ ul {
 body {
     font-size: 13px;
     line-height: 1.4;
+    
+    display: flex;
+    justify-content: center;   /* horizontal center */
 }
+
 @media print {
     .btn-group {
         display: none;
@@ -158,7 +162,7 @@ body {
 
     @page {
         size: A4;
-        margin: 2mm;
+        margin: auto;
     }
 }
 @media print {
