@@ -1,0 +1,167 @@
+
+<style>
+:root {
+    --bg: #ffffff;
+    --text: #000000;
+    --muted: hsl(0, 0%, 27%);
+    --border: #000;
+    --btn-bg: #f4ebeb;
+    --btn-text: #fff;
+}
+
+[data-theme="dark"] {
+    --bg: #0f1115;
+    --text: #f1f1f1;
+    --muted: #b0b0b0;
+    --border: #666;
+    --btn-bg: #f1f1f1;
+    --btn-text: #000;
+}
+
+@page {
+    size: A4;
+    margin: 20;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    margin: 0;
+    line-height: 1;
+}
+
+.container {
+    max-width: 750px;
+    margin: 20px;
+    padding: 1px;
+}
+
+h1 {
+    font-size: 26px;
+    margin-bottom: 2px;
+    text-transform: uppercase;
+}
+
+.contact {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.contact a {
+    color: var(--text);
+    text-decoration: none;
+}
+
+.controls {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+button {
+    border: 1px solid var(--border);
+    background: var(--btn-bg);
+    color: var(--btn-text);
+    padding: 1px 1px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 1px 0;
+}
+
+h2 {
+    font-size: 14px;
+    text-transform: uppercase;
+    border-bottom: .5px solid var(--border);
+    padding-bottom: .01px;
+    margin-bottom: 1px;
+}
+
+p, li {
+    font-size: 13px;
+}
+
+ul {
+    margin: 1px 0 1px 1%;
+}
+
+.row {
+    display: flex;
+    font-size: 15px;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.sub-row {
+    display: flex;
+    justify-content: space-between;
+    font-style: italic;
+    font-size: 14px;
+}
+.vipin-container {
+    display: flex;
+    align-items: center;          /* h1 aur buttons same line me */
+    justify-content: space-between;
+}
+
+.vipin-container h1 {
+    text-align: center;
+    margin: 0;                    /* extra space remove */
+}
+
+.btn-group {
+    display: flex;
+    gap: 6px;                     /* buttons ke beech kam space */
+}
+
+.btn-group button {
+    padding: 3px 6px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.skills p {
+    margin-bottom: 1%;
+}
+.header {
+    display: flex;
+    align-items: center;        /* vertical alignment */
+    justify-content: space-between;
+}
+body {
+    font-size: 13px;
+    line-height: 1.4;
+    
+    display: flex;
+    justify-content: center;   /* horizontal center */
+}
+
+@media print {
+    .btn-group {
+        display: none;
+    }
+
+    @page {
+        size: A4;
+        margin: auto;
+    }
+}
+@media print {
+  a {
+    color: black;
+    pointer-events: auto;
+    text-decoration: underline;
+  }
+}
+
+
+</style>
